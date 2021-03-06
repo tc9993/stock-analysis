@@ -72,7 +72,10 @@
 <h2>Summary</h2>
 
 <h3>Refactoring the Code</h3>
+<p>
+    While the old code performed the task at hand, the new code does it exponentially quicker which is one of many reasons to refactor code.  The new code is also organized a bit more coherently
 
+<h3>Code then vs. Code Now</h3>
   <p>
   While the second and third items under <b>Purpose</b> could have been accompished via the original code, the length of time it took to run the script would not scale well if Steve were to, say, add thousands of stocks, with hundreds of lines of data each, to the analysis.  <b>Exhibit 1.1</b> and <b>Exhibit 1.2</b> show the performance of the original code vs. refactored code in analzying the 2017 data, respectively, while accomplishing the same tasks.
   </p>
@@ -87,6 +90,3 @@
   <p>
   The refactored code shows a decrease in time spent performing the caluclations by 99.2%.  This increase can be attributed to the different approach to looping through the data.  In the original code, a nested For loop ran through 3000+ lines of code 12 times, whereas in the refactored code the For loop only runs through the data set once, reducing the number of cells analyzed from ~36,000 cells to ~3,000 or a 91.6% decrease, pretty closely mirroring the decrease in time spent running the script while achieving identical results.
   </p>
-  <p>
-  <H1>TAYLOR YOU ARE HERE</H1>
-  While the old code performed the task at hand, the new code does it exponentially quicker which is one of many reasons to refactor code.  The new code is also organized a bit more coherently
