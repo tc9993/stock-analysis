@@ -11,7 +11,7 @@
 <h3>Purpose</h3>
 
   <p>
-  The purpose of this project is to determine whether or not DAQO is a good investment by:
+  The purpose of this project is to determine whether or not DAQO (DQ) is a good investment by:
     <ol>
       <li>Refactoring existing code to increase performance, making it more practical, at scale, for larger analyses than the original 12 stocks</li>
       <li>Looking at the Total Daily Volume and Returns for DQ for 2017 and 2018</li>
@@ -92,5 +92,5 @@
   The refactored code shows a decrease in time spent performing the caluclations by 99.2%.  This increase can be attributed to a different approach for looping through the data.  In the original code, a nested For loop ran through 3000+ lines of code 12 times, whereas in the refactored code the For loop only runs through the data set once, reducing the number of cells analyzed from ~36,000 cells to ~3,000 or a 91.6% decrease, pretty closely mirroring the decrease in time spent running the script while achieving identical results.  An almost identical improvement in time spent performing the task was also seen when running the program for the 2018 data.
   </p>
   <p>
-  After putting it through a few tests and concluding that the data all turned out the same, it took about an hour to 90 minutes to refactor this code so that it ran 16 seconds faster than before.  Given that this was a simple, straightforward application that investment of time was not critical, however had it been a massive application, this refactoring could have been costly in a time to money conversion. Since Steve is such a dear friend, and I wholeheartedly support his parents embrace of investing in saving the planet, I feel as though these tweaks were well worth the effort.
+  After putting it through a few tests and concluding that the data all turned out the same, it took about an hour to 90 minutes to refactor this code so that it ran 16 seconds faster than before.  Given that this was a simple, straightforward application such an investment of time was not critical, however had it been a massive application, this refactoring could have been costly in a time as money sense. Since Steve is such a dear friend, and I wholeheartedly support his parents embrace of investing in saving the planet, I feel as though these tweaks were well worth the effort.
   </p>
