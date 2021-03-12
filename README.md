@@ -72,21 +72,25 @@
 <h2>Summary</h2>
 
 <h3>Refactoring the Code</h3>
-<p>
-    While the old code performed the task at hand, the new code does it exponentially quicker which is one of many reasons to refactor code.  The new code is also organized a bit more coherently
-
-<h3>Code then vs. Code Now</h3>
   <p>
-  While the second and third items under <b>Purpose</b> could have been accompished via the original code, the length of time it took to run the script would not scale well if Steve were to, say, add thousands of stocks, with hundreds of lines of data each, to the analysis.  <b>Exhibit 1.1</b> and <b>Exhibit 1.2</b> show the performance of the original code vs. refactored code in analzying the 2017 data, respectively, while accomplishing the same tasks.
+  While the old code performed the task it needed, the new code does it exponentially quicker which is one of many reasons to refactor code.  A few other reasons to refactor code include making the program run faster, more organized/easier to read, and it even gives yourself a chance to re-format it to make it more uniform.  While refactoring has it's upsides, you should also tread cautiously so as not to introduce any bugs via rearrangring or changing it's structure (you know how the old adage goes "if it ain't broke, don't fix it").
+  </p>
+
+<h3>Code Then Vs. Code Now</h3>
+  <p>
+  While the second and third items under <b>Purpose</b> could have been accompished via the original code, the length of time it took to run the script would not scale well if Steve were to, say, add thousands of new stocks, with hundreds of lines or more of data each, to the analysis.  <b>Exhibit 2.1</b> and <b>Exhibit 2.2</b> show the performance of the original code vs. refactored code in analzying the 2017 data, respectively, while performing the same analytical tasks.
   </p>
   <p align="center">
   <img src="https://github.com/tc9993/stock-analysis/blob/main/Resources/Original_Code_2017.png?raw=true" alt="Original Code Performance for 2017"><br>
-  <b>Exhibit 1.1:</b> Original Code Performance for 2017
+  <b>Exhibit 2.1:</b> Original Code Performance for 2017
   </p>
   <p align = "center">
   <img src="https://github.com/tc9993/stock-analysis/blob/main/Resources/VBA_Challenge_2017.png?raw=true" alt="Refactored Code Performance for 2017"><br>
-  <b>Exhibit 1.2:</b> Refactored Code Performance for 2017
+  <b>Exhibit 2.2:</b> Refactored Code Performance for 2017
   </p>
   <p>
-  The refactored code shows a decrease in time spent performing the caluclations by 99.2%.  This increase can be attributed to the different approach to looping through the data.  In the original code, a nested For loop ran through 3000+ lines of code 12 times, whereas in the refactored code the For loop only runs through the data set once, reducing the number of cells analyzed from ~36,000 cells to ~3,000 or a 91.6% decrease, pretty closely mirroring the decrease in time spent running the script while achieving identical results.
+  The refactored code shows a decrease in time spent performing the caluclations by 99.2%.  This increase can be attributed to a different approach for looping through the data.  In the original code, a nested For loop ran through 3000+ lines of code 12 times, whereas in the refactored code the For loop only runs through the data set once, reducing the number of cells analyzed from ~36,000 cells to ~3,000 or a 91.6% decrease, pretty closely mirroring the decrease in time spent running the script while achieving identical results.  An almost identical improvement in time spent performing the task was also seen when running the program for the 2018 data.
+  </p>
+  <p>
+  After putting it through a few tests and concluding that the data all turned out the same, it took about an hour to 90 minutes to refactor this code so that it ran 16 seconds faster than before.  Given that this was a simple, straightforward application that investment of time was not critical, however had it been a massive application, this refactoring could have been costly in a time to money conversion. Since Steve is such a dear friend, and I wholeheartedly support his parents embrace of investing in saving the planet, I feel as though these tweaks were well worth the effort.
   </p>
