@@ -11,7 +11,7 @@
 <h3>Purpose</h3>
 
   <p>
-  The purpose of this project is to determine whether or not DAQO is a good investment by:
+  The purpose of this project is to determine whether or not DAQO (DQ) is a good investment by:
     <ol>
       <li>Refactoring existing code to increase performance, making it more practical, at scale, for larger analyses than the original 12 stocks</li>
       <li>Looking at the Total Daily Volume and Returns for DQ for 2017 and 2018</li>
